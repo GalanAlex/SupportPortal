@@ -10,7 +10,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using SupportPortal.Models;
-using Chat.ChatHub;
+using Microsoft.AspNetCore.Mvc;
+using SignalRChat.Hubs;
 
 namespace SupportPortal
 {
@@ -27,11 +28,17 @@ namespace SupportPortal
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddSignalR();
-
             services.AddControllersWithViews();
             services.AddEntityFrameworkNpgsql().AddDbContext<SupportPortalContext>(options =>
                 options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
             services.AddMvc();
+            services.AddCors(options => options.AddPolicy("CorsPolicy",
+            builder =>
+            {
+                builder.AllowAnyMethod().AllowAnyHeader()
+                       .WithOrigins("https://localhost:44346")
+                       .AllowCredentials();
+            }));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -49,20 +56,28 @@ namespace SupportPortal
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+            app.UseCors("CorsPolicy");
 
             app.UseRouting();
+            
+            //app.UseCors(config => config.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin().AllowCredentials());
 
             //app.UseAuthorization();
-            
+
+
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapHub<ChatHub>("/chat");
-                endpoints.MapControllerRoute(
+                //endpoints.MapHub<ChatHub>("/chathub");
+                /*endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Home}/{action=Index}/{id?}"
+                    );*/
+               
                 
+                endpoints.MapDefaultControllerRoute();
             });
 
+        
         }
     }
 }

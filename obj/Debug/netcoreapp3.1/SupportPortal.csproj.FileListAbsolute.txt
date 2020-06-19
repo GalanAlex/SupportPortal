@@ -2,7 +2,6 @@ C:\Users\Alex\source\repos\SupportPortal\bin\Debug\netcoreapp3.1\appsettings.Dev
 C:\Users\Alex\source\repos\SupportPortal\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\Alex\source\repos\SupportPortal\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Users\Alex\source\repos\SupportPortal\bin\Debug\netcoreapp3.1\SupportPortal.exe
-C:\Users\Alex\source\repos\SupportPortal\obj\Debug\netcoreapp3.1\SupportPortal.csprojAssemblyReference.cache
 C:\Users\Alex\source\repos\SupportPortal\obj\Debug\netcoreapp3.1\SupportPortal.AssemblyInfoInputs.cache
 C:\Users\Alex\source\repos\SupportPortal\obj\Debug\netcoreapp3.1\SupportPortal.AssemblyInfo.cs
 C:\Users\Alex\source\repos\SupportPortal\obj\Debug\netcoreapp3.1\SupportPortal.RazorAssemblyInfo.cache
@@ -164,8 +163,6 @@ C:\Users\Alex\source\repos\SupportPortal\bin\Debug\netcoreapp3.1\runtimes\win-x8
 C:\Users\Alex\source\repos\SupportPortal\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\Alex\source\repos\SupportPortal\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\Alex\source\repos\SupportPortal\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\Alex\source\repos\SupportPortal\obj\Debug\netcoreapp3.1\SupportPortal.csproj.CoreCompileInputs.cache
-C:\Users\Alex\source\repos\SupportPortal\obj\Debug\netcoreapp3.1\SupportPortal.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Alex\source\repos\SupportPortal\obj\Debug\netcoreapp3.1\Razor\Views\People\Create.cshtml.g.cs
 C:\Users\Alex\source\repos\SupportPortal\obj\Debug\netcoreapp3.1\Razor\Views\People\Delete.cshtml.g.cs
 C:\Users\Alex\source\repos\SupportPortal\obj\Debug\netcoreapp3.1\Razor\Views\People\Details.cshtml.g.cs
@@ -178,3 +175,7 @@ C:\Users\Alex\source\repos\SupportPortal\obj\Debug\netcoreapp3.1\Razor\Views\Rep
 C:\Users\Alex\source\repos\SupportPortal\obj\Debug\netcoreapp3.1\Razor\Views\Reports\Index.cshtml.g.cs
 C:\Users\Alex\source\repos\SupportPortal\bin\Debug\netcoreapp3.1\libman.json
 C:\Users\Alex\source\repos\SupportPortal\obj\Debug\netcoreapp3.1\Razor\Views\Chat\Index.cshtml.g.cs
+C:\Users\alex\Source\Repos\SupportPortal\bin\Debug\netcoreapp3.1\System.Net.WebSockets.WebSocketProtocol.dll
+C:\Users\alex\Source\Repos\SupportPortal\obj\Debug\netcoreapp3.1\SupportPortal.csproj.CoreCompileInputs.cache
+C:\Users\alex\Source\Repos\SupportPortal\obj\Debug\netcoreapp3.1\SupportPortal.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\alex\Source\Repos\SupportPortal\obj\Debug\netcoreapp3.1\SupportPortal.csprojAssemblyReference.cache

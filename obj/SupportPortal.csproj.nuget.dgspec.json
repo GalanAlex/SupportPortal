@@ -1,21 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alex\\source\\repos\\SupportPortal\\SupportPortal.csproj": {}
+    "C:\\Users\\alex\\Source\\Repos\\SupportPortal\\SupportPortal.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alex\\source\\repos\\SupportPortal\\SupportPortal.csproj": {
+    "C:\\Users\\alex\\Source\\Repos\\SupportPortal\\SupportPortal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alex\\source\\repos\\SupportPortal\\SupportPortal.csproj",
+        "projectUniqueName": "C:\\Users\\alex\\Source\\Repos\\SupportPortal\\SupportPortal.csproj",
         "projectName": "SupportPortal",
-        "projectPath": "C:\\Users\\Alex\\source\\repos\\SupportPortal\\SupportPortal.csproj",
-        "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alex\\source\\repos\\SupportPortal\\obj\\",
+        "projectPath": "C:\\Users\\alex\\Source\\Repos\\SupportPortal\\SupportPortal.csproj",
+        "packagesPath": "C:\\Users\\alex\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\alex\\Source\\Repos\\SupportPortal\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -38,6 +42,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Microsoft.AspNetCore.SignalR": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[3.1.4, )"
