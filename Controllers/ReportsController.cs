@@ -48,8 +48,8 @@ namespace SupportPortal.Controllers
         public IActionResult Create()
         {
             //ViewData["ContactName"] = new SelectList(_context.People, "", "");
-            ViewData[""]
-            ViewData["PersonId"] = new SelectList(_context.People, "Id", "Id");
+            //ViewData["ContactName"]; = new SelectList(_context.People, "Id", "Name");
+            ViewData["PersonId"] = new SelectList(_context.People, "Id", "Name");
             return View();
         }
 
@@ -83,7 +83,8 @@ namespace SupportPortal.Controllers
             {
                 return NotFound();
             }
-            ViewData["PersonId"] = new SelectList(_context.People, "Id", "Id", report.PersonId);
+
+            ViewData["PersonId"] = new SelectList(_context.People, "Id", "Name", report.PersonId);
             return View(report);
         }
 
