@@ -48,6 +48,7 @@ namespace SupportPortal.Controllers
         public IActionResult Create()
         {
             //ViewData["ContactName"] = new SelectList(_context.People, "", "");
+            ViewData[""]
             ViewData["PersonId"] = new SelectList(_context.People, "Id", "Id");
             return View();
         }

@@ -17,7 +17,7 @@ namespace SupportPortal.Controllers
         {
             _logger = logger;
         }
-        [Route("/chathub")]
+        [Route("/chat")]
         public IActionResult Index()
         {
             return View();

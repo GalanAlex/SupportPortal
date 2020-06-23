@@ -1,4 +1,5 @@
 ﻿@model SupportPortal.Models.Report
+@model SupportPortal.Models.Person
         
 @{
     ViewData["Title"] = "Edit";
@@ -30,6 +31,8 @@
                 <select asp-for="PersonId" class="form-control" asp-items="ViewBag.PersonId"></select>
                 <span asp-validation-for="PersonId" class="text-danger"></span>
             </div>
+            
+
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>

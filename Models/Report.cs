@@ -13,6 +13,5 @@ namespace SupportPortal.Models
         public int PersonId { get; set; }
         public Person Contact { get; set; }
         public string ContactName { get; set; }
-        
     }
 }
