@@ -178,7 +178,6 @@ C:\Users\Alex\source\repos\SupportPortal\obj\Debug\netcoreapp3.1\Razor\Views\Cha
 C:\Users\alex\Source\Repos\SupportPortal\bin\Debug\netcoreapp3.1\System.Net.WebSockets.WebSocketProtocol.dll
 C:\Users\alex\Source\Repos\SupportPortal\obj\Debug\netcoreapp3.1\SupportPortal.csproj.CoreCompileInputs.cache
 C:\Users\alex\Source\Repos\SupportPortal\obj\Debug\netcoreapp3.1\SupportPortal.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\alex\Source\Repos\SupportPortal\obj\Debug\netcoreapp3.1\SupportPortal.csprojAssemblyReference.cache
 C:\Users\Alexey.Galanin\Source\Repos\SupportPortal\obj\Debug\netcoreapp3.1\SupportPortal.dll
 C:\Users\Alexey.Galanin\Source\Repos\SupportPortal\obj\Debug\netcoreapp3.1\SupportPortal.pdb
 C:\Users\Alexey.Galanin\Source\Repos\SupportPortal\bin\Debug\netcoreapp3.1\appsettings.Development.json
@@ -360,3 +359,4 @@ C:\Users\Alexey.Galanin\Source\Repos\SupportPortal\obj\Debug\netcoreapp3.1\Suppo
 C:\Users\Alexey.Galanin\Source\Repos\SupportPortal\obj\Debug\netcoreapp3.1\staticwebassets\SupportPortal.StaticWebAssets.Manifest.cache
 C:\Users\Alexey.Galanin\Source\Repos\SupportPortal\obj\Debug\netcoreapp3.1\staticwebassets\SupportPortal.StaticWebAssets.xml
 C:\Users\Alexey.Galanin\Source\Repos\SupportPortal\obj\Debug\netcoreapp3.1\SupportPortal.genruntimeconfig.cache
+C:\Users\Alex\source\repos\SupportPortal\obj\Debug\netcoreapp3.1\SupportPortal.csprojAssemblyReference.cache

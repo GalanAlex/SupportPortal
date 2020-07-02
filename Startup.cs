@@ -12,6 +12,7 @@ using Microsoft.Extensions.Hosting;
 using SupportPortal.Models;
 using Microsoft.AspNetCore.Mvc;
 using SignalRChat.Hubs;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 namespace SupportPortal
 {
@@ -28,6 +29,12 @@ namespace SupportPortal
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddSignalR();
+            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+                .AddCookie(options =>
+                {
+                    options.LoginPath = new Microsoft.AspNetCore.Http.PathString("/Account/Login");
+                    options.AccessDeniedPath = new Microsoft.AspNetCore.Http.PathString("/Account/Login");
+                });
             services.AddControllersWithViews();
             services.AddEntityFrameworkNpgsql().AddDbContext<SupportPortalContext>(options =>
                 options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
@@ -54,12 +61,14 @@ namespace SupportPortal
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+            
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCors("CorsPolicy");
 
             app.UseRouting();
-            
+            app.UseAuthentication();
+            app.UseAuthorization();
             //app.UseCors(config => config.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin().AllowCredentials());
 
             //app.UseAuthorization();
@@ -67,6 +76,8 @@ namespace SupportPortal
 
             app.UseEndpoints(endpoints =>
             {
+                
+
                 endpoints.MapHub<ChatHub>("/chathub");
                 /*endpoints.MapControllerRoute(
                     name: "default",
