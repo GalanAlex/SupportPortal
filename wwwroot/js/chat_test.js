@@ -3,13 +3,13 @@
     .configureLogging(signalR.LogLevel.Information)
     .withAutomaticReconnect()
     .build();
-
+let userName = "";
 // получение сообщения от сервера
-hubConnection.on('Receive', function (message, connectionId) {
+hubConnection.on("Receive", function (message, userName) {
 
-    // создаем элемент <b> для имени идентификатора подключения
+    // создаем элемент <b> для имени пользователя
     let userNameElem = document.createElement("b");
-    userNameElem.appendChild(document.createTextNode(connectionId + ": "));
+    userNameElem.appendChild(document.createTextNode(userName + ": "));
 
     // создает элемент <p> для сообщения пользователя
     let elem = document.createElement("p");
@@ -21,21 +21,15 @@ hubConnection.on('Receive', function (message, connectionId) {
 
 });
 
-hubConnection.on('Notify', function (message) {
-
-    // добавляет элемент для диагностического сообщения
-    let notifyElem = document.createElement("b");
-    notifyElem.appendChild(document.createTextNode(message));
-    let elem = document.createElement("p");
-    elem.appendChild(notifyElem);
-    var firstElem = document.getElementById("chatroom").firstChild;
-    document.getElementById("chatroom").insertBefore(elem, firstElem);
+// установка имени пользователя
+document.getElementById("loginBtn").addEventListener("click", function (e) {
+    userName = document.getElementById("userName").value;
+    document.getElementById("header").innerHTML = "<h3>Welcome " + userName + "</h3>";
 });
-
-// отправка сообщения на сервер
+// отправка сообщения от простого пользователя
 document.getElementById("sendBtn").addEventListener("click", function (e) {
     let message = document.getElementById("message").value;
-    hubConnection.invoke('Send', message);
+    hubConnection.invoke("Send", message, userName);
 });
 
 hubConnection.start();

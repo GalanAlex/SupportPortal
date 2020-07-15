@@ -1,0 +1,32 @@
+﻿@model SupportPortal.Models.Person
+
+
+
+@if (User.Identity.IsAuthenticated)
+{
+    <a href="~/Account/Logout">Выйти</a>
+}
+else
+{
+    <a href="~/Account/Login">Войти</a>
+}
+
+<div id="userNameBlock">
+    Введите ник:<br />
+    <input id="userName" type="text" value="" />
+    <input id="loginBtn" type="button" value="Установить" />
+</div>
+<br />
+
+<div id="header"></div>
+<br />
+
+<div id="inputForm">
+    <input type="text" id="message" />
+    <input type="button" id="sendBtn" value="Отправить" />
+</div>
+
+
+<div id="chatroom"></div>
+<script src="~/microsoft/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/chat_test.js"></script>

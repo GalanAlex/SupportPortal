@@ -360,3 +360,5 @@ C:\Users\Alexey.Galanin\Source\Repos\SupportPortal\obj\Debug\netcoreapp3.1\stati
 C:\Users\Alexey.Galanin\Source\Repos\SupportPortal\obj\Debug\netcoreapp3.1\staticwebassets\SupportPortal.StaticWebAssets.xml
 C:\Users\Alexey.Galanin\Source\Repos\SupportPortal\obj\Debug\netcoreapp3.1\SupportPortal.genruntimeconfig.cache
 C:\Users\Alex\source\repos\SupportPortal\obj\Debug\netcoreapp3.1\SupportPortal.csprojAssemblyReference.cache
+C:\Users\Alex\source\repos\SupportPortal\obj\Debug\netcoreapp3.1\Razor\Views\Account\Index.cshtml.g.cs
+C:\Users\Alex\source\repos\SupportPortal\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
